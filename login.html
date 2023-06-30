@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Chores Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="container bg-secondary text-center">
+    <main class="form-signin">
+        <!-- Login Form-->
+          <img class="mb-4" src="./images/checklist.png" alt="" height="300">
+          <h1 class="h3 mb-3 fw-normal"><b>House Chores</b> - Login</h1>
+          <form id="loginForm">
+          <div class="form-floating">
+            <!-- user name -->
+            <input type="text" class="form-control" id="username" placeholder="User Name">
+            <label for="username">User Name</label>
+            <br>
+          </div>
+          <div class="form-floating">
+            <!-- password -->
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <label for="password">Password</label>
+          </div>
+       
+          <button class="w-100 btn btn-lg btn-primary mt-3" id="login" type="submit">Login</button>
+        </form>
+      </main>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Error!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4>UserName or Password Not Found!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- scripts -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+<script src="login.js"></script>
+</body>
+</html>
